@@ -27,7 +27,7 @@ provider "aws" {
 #  public_key = tls_private_key.test_key.public_key_openssh
 #}
 
-resource "random_pet" "sg" {}
+resource "random_pet" "sg" {} 
 
 resource "aws_security_group" "web-sg" {
   name = "${random_pet.sg.id}-sg"
